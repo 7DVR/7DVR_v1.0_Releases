@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Servers>
+	<!-- Logo is a direct link to a jpg /png file. This logo will be used if an individual mod does not have one. -->
+	<!-- If logo is not specified, the mod launcher's default will be shown. -->
+	<ServerGroup Name="7DVR" Logo="https://staticdelivery.nexusmods.com/mods/1059/images/3011/3011-1687150704-107959013.png" Description="7D2D VR Overhaul!">
+		<!-- Logo is a direct link to a jpg /png file. Default image dimension is 2064x452 -->
+		<Server Name="7DVR" Logo="https://staticdelivery.nexusmods.com/mods/1059/images/3011/3011-1687150704-107959013.png">
+			<Description>Experience the world of 7 Days to Die in Virtual Reality!
+Supports full motion controls and 6DOF.
+
+Have you ever wanted to truly feel like you were surviving in a zombie apocalypse? 
+Do you long to huddle in a dirty basement by torchlight while something makes horrible noises and bangs on the door above?
+This might be the mod for you. 
+
+It has 6DOF tracking
+It has motion controls
+It has physical melee combat (or you can use triggers--you do you!)
+It has in game settings menu (options->controls->VR)
+It has first person vehicle controls (and child lock seat belts for the gyrocopter if desired)
+It has the ability to customize your grip/hold on any item saved to your copy of the game
+It has smooth turn, snap turn, roomscale turn
+It has the ability to move in the direction of your headset or the direction of your controller
+It has the ability to dance and watch your arms, legs, or shadow mirror your actions!!!
+It has the ability to see your other friend in VR wave to you. (Even if you are a flat player using this mod)
+It has bugs you have never seen or ever thought possible in 7D2D!!!
+It does NOT have 2 handed bows or real working scopes YET (On the TODO List).
+It does NOT have a ton of other features we still want to add!  Look for updates in the future!
+
+Supports play between flat screen players and VR. 
+Client side only for mod install... no server alterations required (NO EAC though)
+
+Compatible with MANY other mods including overhauls like Darkness Falls, District Zero, etc.
+				
+For more up to date information and discussion please join the 7D discord
+https://flat2vr.com/ 
+
+</Description>
+			
+			
+			<!-- Who made -->
+			<Author>Kaaliba and Necro</Author>
+			
+			<!-- 
+				This forces the mod launcher to make a copy of the game for the mod. 
+				Mod that use BepInEx, and relative paths should use this setting.
+				Remove Deploy or change it to Partial to skip that step
+			-->
+			<Deploy>Full</Deploy>
+			
+			<!-- This is the alpha version you last tested with -->
+			<!-- You can use Latest if you just want the current one -->
+			<Version>Latest</Version>
+			
+			<!-- Have a discord you want people to join? -->
+			<Discord>http://flat2vr.com/</Discord>
+			<!-- Got a website -->
+	        <WebSite></WebSite>
+			
+			<!-- Twitter? -->
+            <Twitter></Twitter>
+			
+			<!-- Want to give people an option to donate? -->
+            <Donate>https://www.patreon.com/7DaysVR</Donate>		
+
+			<!-- Got some release notes you want people to view? -->
+			<ReleaseNotes>https://www.nexusmods.com/7daystodie/mods/3011?tab=description</ReleaseNotes>
+			
+			<!-- Only the first download is used -->
+			<Downloads>
+				<Download>https://github.com/7DVR/7DVR_Release</Download>
+			</Downloads>
+		</Server>
+	</ServerGroup>
+</Servers>

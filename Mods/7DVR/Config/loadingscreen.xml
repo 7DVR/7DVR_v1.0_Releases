@@ -1,0 +1,11 @@
+<loadingscreen>
+<!-- Add loading screens that show various VR controller layouts -->
+	<append xpath="doc/backgrounds">
+        <tex file="@modfolder:/Config/Images/Headset1.jpg" />
+        <tex file="@modfolder:/Config/Images/Headset2.jpg" />
+		<tex file="@modfolder:/Config/Images/Headset3.jpg" />
+		<tex file="@modfolder:/Config/Images/Thanks.png" />
+		<tex file="@modfolder:/Config/Images/DCThanks.jpg" />
+	</append>
+
+</loadingscreen>

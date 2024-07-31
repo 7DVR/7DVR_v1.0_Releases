@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 4110321678
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6fecf4c11233610bc9c9e07d59d53a72
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: bd1d9635b496050ed2002fd8e55dcb2a
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 850595691
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/_Test Assets (Delete)/VRIK Animated Locomotion/VRIK Animated Locomotion.controller
+- Assets/_Test Assets (Delete)/VRIK Animated Locomotion/VRIK Oculus Animated LocomotionSettings.lighting
+Dependencies: []

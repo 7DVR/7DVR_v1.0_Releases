@@ -1,0 +1,43 @@
+ManifestFileVersion: 0
+CRC: 1667699909
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: df64804b07262717113454118aa21bc5
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f2262a2e3c165944b9dd303ef698908d
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/CustomResources/Prefabs/VRVignette.prefab
+- Assets/7DVR Custom/MainMenuScenery.prefab
+- Assets/7DVR Custom/Test Scenery Objects/7D2D_VR_computer_and_desk_3.fbx
+Dependencies: []

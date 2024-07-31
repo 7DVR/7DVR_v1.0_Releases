@@ -1,0 +1,176 @@
+﻿<VRwindows>
+
+	<!-- New Options submenu for VR-->
+
+	<!-- Overhauls that completely remove main menu and rebuild with their own kind of button break this-->
+	<!-- We find and fix SMX_menu and CCXUi_MainMenu (chaos core) in code but other overhauls might need this tweaked for compatiblity until we know-->
+	<insertBefore xpath="/windows/window[@name='optionsMenu']/grid/mainmenubutton[@name='btnProfiles']">
+		<mainmenubutton name="btnVROptions" pivot="center" width="400" height="50" caption_key="xuiVROptions"/>
+	</insertBefore>
+
+	<!-- VROptions Submenu-->
+	<append xpath="/windows">
+
+		<!-- New Logo for VR or VR ally-->
+		<window name="VRLogo" depth="-1" pos="-500,-200" width="250" height="350" anchor="RightTop">
+			<texture name="VRLogo" texture="@modfolder:/Config/Images/7DVRLogo.png"/>
+		</window>
+		
+		<window name="VROptions" anchor="CenterCenter" pos="-700,425" width="1400" height="780" cursor_area="true">
+			<panel name="header" pos="0,0" height="43" depth="1" backgroundspritename="ui_game_panel_header" bordercolor="[black]" borderthickness="3">
+				<label style="header.name" name="windowheader" pos="6,-6" width="750" text_key="xuiVROptions"/>
+			</panel>
+
+			<rect name="VRTabs" controller="TabSelector" pos="0,-50" height="650">
+				<sprite depth="10" name="border" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" globalopacity="true" globalopacitymod="0.9" />
+
+				<rect name="tabsHeader" height="39" depth="0">
+					<grid name="tabButtons" pos="3,-2" depth="2" rows="1" cols="8" cell_width="144" cell_height="36" repeat_content="true" arrangement="horizontal">
+						<rect>
+							<simplebutton name="tabButton" depth="2" pos="-1,0" width="143" height="36" font_size="34" caption_key="xuiBack" bordercolor="[transparent]" defaultcolor="[darkGrey]" selectedsprite="menu_empty" selectedcolor="[mediumGrey]" foregroundlayer="false"/>
+							<sprite depth="8" sprite="menu_empty2px" pos="142,0" width="2" height="35" color="[black]"/>
+						</rect>
+					</grid>
+				</rect>
+
+				<rect name="tabsContents" depth="2" pos="0,-37" height="611">
+					<sprite depth="0" pos="2,0" name="backgroundMain" sprite="menu_empty3px" color="[mediumGrey]" type="sliced" fillcenter="true"/>
+
+					<rect name="7DVRGeneralSettings" tab_key="xui7DVRGeneralSettings" >
+						<grid pos="8,-40" rows="13" cell_width="350" cell_height="45" repeat_content="false" arrangement="vertical" >
+							<controloption name="VRMode" type="ComboBoxBool" localization_prefix="xuiComboOnOff" />
+							<controloption name="SeatedModeEnabled" type="ComboBoxBool" localization_prefix="xuiComboOnOff" />
+							<controloption name="WorkoutModeEnabled" type="ComboBoxBool" localization_prefix="xuiComboOnOff" />
+
+						</grid>
+						<grid pos="700,-40" rows="13" cell_width="350" cell_height="45" repeat_content="false" arrangement="vertical" >
+							<controloption name="BrokenItemAlert" type="ComboBoxBool" localization_prefix="xuiComboOnOff" />
+							<!-- removed until more menu space <controloption name="KeyboardXOffset" type="ComboBoxFloat" value_min="-2.0" value_max="2.0" value_increment="0.1" value_wrap="false" format_string="0.0" /> -->
+							<!-- removed until more menu space <controloption name="KeyboardYOffset" type="ComboBoxFloat" value_min="-2.0" value_max="2.0" value_increment="0.1" value_wrap="false" format_string="0.0" /> -->
+							<!-- removed until more menu space <controloption name="KeyboardZOffset" type="ComboBoxFloat" value_min="-2.0" value_max="2.0" value_increment="0.1" value_wrap="false" format_string="0.0" /> -->
+							<controloption name="ImprovedHorns" type="ComboBoxBool" localization_prefix="xuiComboOnOff" />
+
+						</grid>
+					</rect>
+					<!-- End General -->
+
+					<rect name="7DVRCameraSettings" tab_key="xui7DVRCameraSettings" >
+						<grid pos="8,-40" rows="13" cell_width="350" cell_height="45" repeat_content="false" arrangement="vertical" >
+							<controloption name="HeadVisible" type="ComboBoxBool" localization_prefix="xuiComboYesNo" />
+							<controloption name="BodyVisible" type="ComboBoxBool" localization_prefix="xuiComboYesNo" />
+							<controloption name="RemoveVehicleSeatTilt" type="ComboBoxBool" localization_prefix="xuiComboYesNo" />
+							<controloption name="VehicleComfortCameraLock" type="ComboBoxBool" localization_prefix="xuiComboYesNo" />
+							<controloption name="ComfortEnableVignette" type="ComboBoxList`1[System.String]" values="Enabled For Vehicles, Enabled For All Movement, Disabled" localization_prefix="" />
+							<controloption name="ComfortVignetteApertureSize" type="ComboBoxFloat" value_min="0.0" value_max="1.0" value_increment="0.05" value_wrap="false" format_string="0%" />
+							<controloption name="ComfortVignetteFeatheringEffect" type="ComboBoxFloat" value_min="0.0" value_max="1.0" value_increment="0.05" value_wrap="false" format_string="0%" />
+						</grid>
+						<grid pos="700,-40" rows="13" cell_width="350" cell_height="45" repeat_content="false" arrangement="vertical" >
+							<controloption name="LowStmAlert" type="ComboBoxBool" localization_prefix="xuiComboOnOff" />
+							<controloption name="LowStmThreshold" type="ComboBoxFloat" value_min="0.05" value_max="0.90" value_increment="0.05" value_wrap="false" format_string="0%" />
+							<controloption name="DynamicObjectDetailTargetFPS" type="ComboBoxInt" value_min="0" value_max="120" value_increment="5" value_wrap="false" />
+						</grid>
+					</rect>
+					<!-- End Camera -->
+
+					<rect name="7DVRControlSettings" tab_key="xui7DVRControlSettings" >
+						<grid pos="8,-40" rows="13" cell_width="350" cell_height="45" repeat_content="false" arrangement="vertical" >
+							<controloption name="TurnMode" type="ComboBoxList`1[System.String]" values="Snap, Smooth, Physical" localization_prefix="" />
+							<controloption name="SnapTurnAngle" type="ComboBoxFloat" value_min="0.0" value_max="180.0" value_increment="5.0" value_wrap="false" format_string="0.0" />
+							<controloption name="SmoothTurnSpeed" type="ComboBoxFloat" value_min="0.0" value_max="720.0" value_increment="5.0" value_wrap="false" format_string="0.0" />
+							<controloption name="MoveDirection" type="ComboBoxList`1[System.String]" values="Headset, LeftHand, RightHand" localization_prefix="" />
+							<controloption name="ToggleRun" type="ComboBoxList`1[System.String]" values="Off, Run Until Stop, Always Run" localization_prefix="" />
+							<controloption name="MenuActionHotkeysMode" type="ComboBoxList`1[System.String]" values="Disabled, Hotkey Only, Click then Hotkey" localization_prefix="" />
+						</grid>
+
+						<grid pos="700,-40" rows="13" cell_width="350" cell_height="45" repeat_content="false" arrangement="vertical" >
+							<controloption name="PhysicalSneak" type="ComboBoxBool" localization_prefix="xuiComboOnOff" />
+							<controloption name="PhysicalSneakThreshold" type="ComboBoxFloat" value_min="0.1" value_max="0.95" value_increment="0.05" value_wrap="false" format_string="0%" />
+							<controloption name="LeftHandedMode" type="ComboBoxBool" localization_prefix="xuiComboOnOff" />
+							<controloption name="LeftHandedControlMode" type="ComboBoxList`1[System.String]" values="Mirror All, Mirror Grips/Triggers Only, NoChanges" localization_prefix="" />
+							<controloption name="GyroSafetyLatch" type="ComboBoxBool" localization_prefix="xuiComboOnOff" />
+							<controloption name="PreventMenuMove" type="ComboBoxBool" localization_prefix="xuiComboYesNo" />
+						</grid>
+
+
+					</rect>
+					<!-- End Control -->
+
+					<rect name="7DVRUISettings" tab_key="xui7DVRUISettings" >
+						<grid pos="8,-40" rows="13" cell_width="350" cell_height="45" repeat_content="false" arrangement="vertical" >
+							<controloption name="UIMode" type="ComboBoxList`1[System.String]" values="Float, Wrist, Both, Mixed, Mixed (District Zero), Mixed (Darkness Falls), Mixed (War3zuk), Mixed (Asia Mod), None" localization_prefix="" />
+							<controloption name="WeaponPointer" type="ComboBoxBool" localization_prefix="xuiComboOnOff" />
+							<controloption name="CursorSize" type="ComboBoxFloat" value_min="0.00" value_max="2.0" value_increment="0.1" value_wrap="false" format_string="0%" />
+							<controloption name="WorldPointer_R" type="ComboBoxFloat" value_min="0.0" value_max="1.0" value_increment="0.01" value_wrap="true" format_string="0%" />
+							<controloption name="WorldPointer_G" type="ComboBoxFloat" value_min="0.0" value_max="1.0" value_increment="0.01" value_wrap="true" format_string="0%" />
+							<controloption name="WorldPointer_B" type="ComboBoxFloat" value_min="0.0" value_max="1.0" value_increment="0.01" value_wrap="true" format_string="0%" />
+							<controloption name="WorldPointer_A" type="ComboBoxFloat" value_min="0.05" value_max="1.0" value_increment="0.05" value_wrap="true" format_string="0%" />
+							<controloption name="MenuPointer_R" type="ComboBoxFloat" value_min="0.0" value_max="1.0" value_increment="0.01" value_wrap="true" format_string="0%" />
+							<controloption name="MenuPointer_G" type="ComboBoxFloat" value_min="0.0" value_max="1.0" value_increment="0.01" value_wrap="true" format_string="0%" />
+							<controloption name="MenuPointer_B" type="ComboBoxFloat" value_min="0.0" value_max="1.0" value_increment="0.01" value_wrap="true" format_string="0%" />
+							<controloption name="MenuPointer_A" type="ComboBoxFloat" value_min="0.05" value_max="1.0" value_increment="0.05" value_wrap="true" format_string="0%" />
+						</grid>
+						<grid pos="700,-40" rows="13" cell_width="350" cell_height="45" repeat_content="false" arrangement="vertical" >
+
+							<simplebutton name="btnAdjustLeftItem" pivot="left" width="150" height="32" font_size="28" caption_key="btnAdjustLeftItem" />
+							<simplebutton name="btnAdjustLeftLaser" pivot="left" width="150" height="32" font_size="28" caption_key="btnAdjustLeftLaser" />
+							<simplebutton name="btnAdjustLeftHand" pivot="left" width="150" height="32" font_size="28" caption_key="btnAdjustLeftHand" />
+							<simplebutton name="btnResetLeftHand" pivot="left" width="150" height="32" font_size="28" caption_key="btnResetLeftHand" />
+
+						</grid>
+
+						<grid pos="1000,-40" rows="13" cell_width="350" cell_height="45" repeat_content="false" arrangement="vertical" >
+							<simplebutton name="btnAdjustRightItem" pivot="left" width="150" height="32" font_size="28" caption_key="btnAdjustRightItem" />
+							<simplebutton name="btnAdjustRightLaser" pivot="left" width="150" height="32" font_size="28" caption_key="btnAdjustRightLaser" />
+							<simplebutton name="btnAdjustRightHand" pivot="left" width="150" height="32" font_size="28" caption_key="btnAdjustRightHand" />
+							<simplebutton name="btnResetRightHand" pivot="left" width="150" height="32" font_size="28" caption_key="btnResetRightHand" />
+						</grid>
+
+					</rect>
+					<!-- End UI -->
+					<rect name="Shards" tab_key="xuiShards" >
+						<grid pos="8,-40" rows="13" cell_width="350" cell_height="45" repeat_content="false" arrangement="vertical" >
+							<controloption name="UnderConstruction" type="ComboBoxList`1[System.String]" values="Darn, poop, awwShucks" localization_prefix="" />
+							<simplebutton name="btnAdjuststatsShardGO" pivot="left" width="150" height="32" font_size="28" caption_key="btnAdjuststatsShardGO" />
+							<simplebutton name="btnAdjustmpShardGO" pivot="left" width="150" height="32" font_size="28" caption_key="btnAdjustmpShardGO" />
+							<simplebutton name="btnAdjusttoolbeltShardGO" pivot="left" width="150" height="32" font_size="28" caption_key="btnAdjusttoolbeltShardGO" />
+							<simplebutton name="btnAdjustquestShardGO" pivot="left" width="150" height="32" font_size="28" caption_key="btnAdjustquestShardGO" />
+							<simplebutton name="btnAdjustlootShardGO" pivot="left" width="150" height="32" font_size="28" caption_key="btnAdjustlootShardGO" />
+							<simplebutton name="btnAdjustmainShardGO" pivot="left" width="150" height="32" font_size="28" caption_key="btnAdjustmainShardGO" />
+						</grid>
+					</rect>
+					<!-- End Shards -->
+					
+					<rect name="7DVRDebugSettings" tab_key="xui7DVRDebugSettings" >
+						<grid pos="8,-40" rows="13" cell_width="350" cell_height="45" repeat_content="false" arrangement="vertical" >
+							<controloption name="VR_DEBUG_ON" type="ComboBoxBool" localization_prefix="xuiComboYesNo" />
+							<controloption name="DebugSteamHands" type="ComboBoxBool" localization_prefix="xuiComboOnOff" />
+							<controloption name="SurpriseFeature" type="ComboBoxBool" localization_prefix="xuiComboOnOff" />
+						</grid>
+						<grid pos="700,-40" rows="13" cell_width="350" cell_height="45" repeat_content="false" arrangement="vertical" >
+							<controloption name="CompanionCube" type="ComboBoxBool" localization_prefix="xuiComboYesNo" />
+							<controloption name="BitcoinMiner" type="ComboBoxList`1[System.String]" values="Yes, On, Enabled" localization_prefix="" />
+						</grid>
+					</rect>
+					<!-- End Debug -->
+					<rect name="7DVRControllerMap" tab_key="xui7DVRControllerMap" >
+						<texture name="ControllerMap" texture="@modfolder:/Config/Images/Headset1.jpg"/>
+						<label style="header.name" name="defaultNote" pos="180,-6" width="1000" color="255,255,0" text="Default Controls - Does not update if you remap SteamVR controls"/>
+						<label style="header.name" name="ChangeShape" pos="550,-500" width="1000" color="255,0,0" text="Hold Right Stick for ammo and shape selection"/>
+					</rect>
+					<!-- End ControllerMap -->
+					<rect name="Thanks" tab_key="xui7DVRSupporters" >
+						<texture name="ControllerMap" texture="@modfolder:/Config/Images/Thanks.png"/>
+					</rect>
+					<!-- End Support -->
+
+				</rect>
+				<!-- End tabcontents -->
+			</rect>
+			<rect pos="0,-720">
+				<simplebutton name="btnBack" depth="3" pos="0,0" width="200" height="36" font_size="32" caption_key="xuiBack" upper_case="true"/>
+				<simplebutton name="btnApply" depth="3" pos="1400, 0" pivot="right" width="200" height="36" font_size="32" caption_key="xuiApply" upper_case="true" />
+			</rect>
+		</window>
+	</append>
+
+</VRwindows>

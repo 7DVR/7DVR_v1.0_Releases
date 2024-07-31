@@ -1,0 +1,425 @@
+{
+  "actions": [
+    {
+      "name": "/actions/default/in/InteractUI",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/Teleport",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/default/in/GrabPinch",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/default/in/GrabGrip",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/default/in/Pose",
+      "type": "pose",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/default/in/SkeletonLeftHand",
+      "type": "skeleton",
+      "skeleton": "/skeleton/hand/left",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/default/in/SkeletonRightHand",
+      "type": "skeleton",
+      "skeleton": "/skeleton/hand/right",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/default/in/Squeeze",
+      "type": "vector1",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/default/in/HeadsetOnHead",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/default/in/SnapTurnLeft",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/default/in/SnapTurnRight",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/default/out/Haptic",
+      "type": "vibration"
+    },
+    {
+      "name": "/actions/Main/in/moveAction",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/Main/in/runAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/Main/in/primaryAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/Main/in/jumpAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/Main/in/previousSlotAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/Main/in/secondaryAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/Main/in/inventoryAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/Main/in/interactAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/Main/in/menuAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/Main/in/reloadAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/Main/in/mapAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/Main/in/crouchAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/Main/in/nextSlotAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/Main/in/flashlightAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/Main/in/snapTurnLeftAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/Main/in/snapTurnRightAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/Main/in/RecalibrateAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/Main/in/SmoothTurnAction",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/Main/in/honkHornAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/Main/in/pushToTalkAction",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/Main/in/toggleKeyboardAction",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/Main/in/hotkey1Action_A",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/Main/in/hotkey2Action_S",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/Main/in/hotkey3Action_W",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/Main/in/hotkey4Action_D",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/Main/in/placeholderDoesNothing",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/SouthpawMain/in/moveAction",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/SouthpawMain/in/runAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/SouthpawMain/in/primaryAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/SouthpawMain/in/jumpAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/SouthpawMain/in/previousSlotAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/SouthpawMain/in/inventoryAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/SouthpawMain/in/interactAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/SouthpawMain/in/menuAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/SouthpawMain/in/reloadAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/SouthpawMain/in/mapAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/SouthpawMain/in/crouchAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/SouthpawMain/in/nextSlotAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/SouthpawMain/in/flashlightAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/SouthpawMain/in/snapTurnLeftAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/SouthpawMain/in/snapTurnRightAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/SouthpawMain/in/RecalibrateAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/SouthpawMain/in/SmoothTurnAction",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/SouthpawMain/in/honkHornAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/SouthpawMain/in/pushToTalkAction",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/SouthpawMain/in/toggleKeyboardAction",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/SouthpawMain/in/hotkey1Action_A",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/SouthpawMain/in/hotkey2Action_S",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/SouthpawMain/in/hotkey3Action_W",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/SouthpawMain/in/hotkey4Action_D",
+      "type": "boolean",
+      "requirement": "optional"
+    },
+    {
+      "name": "/actions/SouthpawMain/in/secondaryAction",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/SouthpawMain/in/placeholderDoesNothing",
+      "type": "boolean",
+      "requirement": "optional"
+    }
+  ],
+  "action_sets": [
+    {
+      "name": "/actions/default",
+      "usage": "single"
+    },
+    {
+      "name": "/actions/Main",
+      "usage": "leftright"
+    },
+    {
+      "name": "/actions/SouthpawMain",
+      "usage": "leftright"
+    }
+  ],
+  "default_bindings": [
+    {
+      "controller_type": "vive_controller",
+      "binding_url": "bindings_vive_controller.json"
+    },
+    {
+      "controller_type": "oculus_touch",
+      "binding_url": "bindings_oculus_touch.json"
+    },
+    {
+      "controller_type": "knuckles",
+      "binding_url": "bindings_knuckles.json"
+    },
+    {
+      "controller_type": "holographic_controller",
+      "binding_url": "bindings_holographic_controller.json"
+    },
+    {
+      "controller_type": "vive_cosmos_controller",
+      "binding_url": "bindings_vive_cosmos_controller.json"
+    },
+    {
+      "controller_type": "logitech_stylus",
+      "binding_url": "bindings_logitech_stylus.json"
+    },
+    {
+      "controller_type": "vive_cosmos",
+      "binding_url": "binding_vive_cosmos.json"
+    },
+    {
+      "controller_type": "vive",
+      "binding_url": "binding_vive.json"
+    },
+    {
+      "controller_type": "indexhmd",
+      "binding_url": "binding_index_hmd.json"
+    },
+    {
+      "controller_type": "vive_pro",
+      "binding_url": "binding_vive_pro.json"
+    },
+    {
+      "controller_type": "rift",
+      "binding_url": "binding_rift.json"
+    },
+    {
+      "controller_type": "holographic_hmd",
+      "binding_url": "binding_holographic_hmd.json"
+    },
+    {
+      "controller_type": "vive_tracker_camera",
+      "binding_url": "binding_vive_tracker_camera.json"
+    },
+    {
+      "controller_type": "hpmotioncontroller",
+      "binding_url": "application_generated_unity_valheimvr_exe_binding_hpmotioncontroller.json"
+    }
+  ],
+  "localization": [
+    {
+      "language_tag": "Run",
+      "/actions/Main/in/RecalibrateAction": "Recalibrate",
+      "/actions/Main/in/SmoothTurnAction": "Smooth Turn",
+      "/actions/Main/in/crouchAction": "Toggle Crouch",
+      "/actions/Main/in/flashlightAction": "Toggle Flashlight",
+      "/actions/Main/in/interactAction": "Interact",
+      "/actions/Main/in/inventoryAction": "Inventory",
+      "/actions/Main/in/jumpAction": "Jump",
+      "/actions/Main/in/mapAction": "Map",
+      "/actions/Main/in/menuAction": "Menu",
+      "/actions/Main/in/moveAction": "Move",
+      "/actions/Main/in/nextSlotAction": "Next Slot / Zoom In",
+      "/actions/Main/in/previousSlotAction": "Previous Slot / Zoom Out",
+      "/actions/Main/in/primaryAction": "Primary (Fire / Use / Left Click)",
+      "/actions/Main/in/reloadAction": "Reload Weapon",
+      "/actions/Main/in/runAction": "Run",
+      "/actions/Main/in/secondaryAction": "Secondary (Power attack / ADS / Right Click)",
+      "/actions/Main/in/snapTurnLeftAction": "Snap Turn Left",
+      "/actions/Main/in/snapTurnRightAction": "Snap Turn Right",
+      "/actions/default/in/GrabGrip": "Grab Grip",
+      "/actions/default/in/GrabPinch": "Grab Pinch",
+      "/actions/default/in/HeadsetOnHead": "Headset on head (proximity sensor)",
+      "/actions/default/in/InteractUI": "Interact With UI",
+      "/actions/default/in/Pose": "Pose",
+      "/actions/default/in/SkeletonLeftHand": "Skeleton (Left)",
+      "/actions/default/in/SkeletonRightHand": "Skeleton (Right)",
+      "/actions/default/in/SnapTurnLeft": "Snap Turn (Left)",
+      "/actions/default/in/SnapTurnRight": "Snap Turn (Right)",
+      "/actions/default/in/Teleport": "Teleport",
+      "/actions/default/out/Haptic": "Haptic",
+      "/actions/Main/in/honkHornAction": "Honk Horn",
+      "/actions/Main/in/pushToTalkAction": "Push To Talk",
+      "/actions/Main/in/toggleKeyboardAction": "Toggle Keyboard On/Off",
+      "/actions/SouthpawMain/in/moveAction": "Move",
+      "/actions/SouthpawMain/in/primaryAction": "Primary (Fire / Use / Left Click)",
+      "/actions/SouthpawMain/in/jumpAction": "Jump",
+      "/actions/SouthpawMain/in/previousSlotAction": "Previous Slot / Zoom Out",
+      "/actions/SouthpawMain/in/snapTurnRightAction": "Snap Turn Right",
+      "/actions/SouthpawMain/in/runAction": "Run",
+      "/actions/SouthpawMain/in/inventoryAction": "Inventory",
+      "/actions/SouthpawMain/in/interactAction": "Interact",
+      "/actions/SouthpawMain/in/menuAction": "Menu",
+      "/actions/SouthpawMain/in/reloadAction": "Reload Weapon",
+      "/actions/SouthpawMain/in/mapAction": "Map",
+      "/actions/SouthpawMain/in/crouchAction": "Toggle Crouch",
+      "/actions/SouthpawMain/in/nextSlotAction": "Next Slot / Zoom In",
+      "/actions/SouthpawMain/in/flashlightAction": "Toggle Flashlight",
+      "/actions/SouthpawMain/in/snapTurnLeftAction": "Snap Turn Left",
+      "/actions/SouthpawMain/in/RecalibrateAction": "Recalibrate",
+      "/actions/SouthpawMain/in/SmoothTurnAction": "Smooth Turn",
+      "/actions/SouthpawMain/in/honkHornAction": "Honk Horn",
+      "/actions/SouthpawMain/in/pushToTalkAction": "Push To Talk",
+      "/actions/SouthpawMain/in/toggleKeyboardAction": "Toggle Keyboard On/Off",
+      "/actions/SouthpawMain/in/secondaryAction": "Secondary (Power attack / ADS / Right Click)",
+      "/actions/Main/in/hotkey1Action_A": "Hotkey1 'A' (Use/Eat/Repair)",
+      "/actions/Main/in/hotkey2Action_S": "Hotkey2 'S' (Scrap)",
+      "/actions/Main/in/hotkey3Action_W": "Hotkey3 'W' (Wear/Sell)",
+      "/actions/Main/in/hotkey4Action_D": "Hotkey4 'D' (Drop)",
+      "/actions/Main/in/placeholderDoesNothing": "Placeholder (does nothing)",
+      "/actions/SouthpawMain/in/hotkey1Action_A": "Hotkey1 'A' (Use/Eat/Repair)",
+      "/actions/SouthpawMain/in/hotkey3Action_W": "Hotkey3 'W' (Wear/Sell)",
+      "/actions/SouthpawMain/in/hotkey4Action_D": "Hotkey4 'D' (Drop)",
+      "/actions/SouthpawMain/in/placeholderDoesNothing": "Placeholder (does nothing)"
+    }
+  ]
+}
