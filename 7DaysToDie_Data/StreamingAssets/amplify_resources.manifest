@@ -1,0 +1,19 @@
+ManifestFileVersion: 0
+CRC: 3792440524
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5706dc9f81685d9f55ca4c4df95fe7cd
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 87b0bba9d18ffc75f60c50b410bd4a4e
+HashAppended: 0
+ClassTypes:
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/AmplifyOcclusion/Resources/Apply.shader
+- Assets/AmplifyOcclusion/Resources/Blur.shader
+- Assets/AmplifyOcclusion/Resources/Occlusion.shader
+Dependencies: []

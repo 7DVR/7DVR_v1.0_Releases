@@ -1,0 +1,10 @@
+<VR_xui>
+	<append xpath="/xui/ruleset[@name='default']">
+		<window_group name="VR" controller="_7DaysVR.VRCore.UI.XUiC_7DVROptions, 7DaysVR, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+			<window name="VROptions"/>
+		</window_group>
+	</append>
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='mainMenuLogo']">
+		<window name="VRLogo" anchor="RightTop"/>
+	</append>
+</VR_xui>

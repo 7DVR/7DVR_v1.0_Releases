@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 2048005851
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: amplify_resources
+      Dependencies: {}
+    Info_1:
+      Name: steamvr_player_prefabs
+      Dependencies: {}
+    Info_2:
+      Name: vrkeys
+      Dependencies: {}
+    Info_3:
+      Name: steamvr_shaders
+      Dependencies: {}
+    Info_4:
+      Name: xrmanager
+      Dependencies: {}
+    Info_5:
+      Name: vhvr_custom
+      Dependencies: {}
+    Info_6:
+      Name: 7dvrcustomprefabs
+      Dependencies: {}
