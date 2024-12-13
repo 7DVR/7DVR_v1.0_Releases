@@ -97,7 +97,7 @@
 
 					<rect name="7DVRUISettings" tab_key="xui7DVRUISettings" >
 						<grid pos="8,-40" rows="13" cell_width="350" cell_height="45" repeat_content="false" arrangement="vertical" >
-							<controloption name="UIMode" type="ComboBoxList`1[System.String]" values="Float, Wrist, Both, Mixed, Mixed (District Zero), Mixed (Darkness Falls), Mixed (War3zuk), Mixed (Asia Mod), None" localization_prefix="" />
+							<controloption name="UIMode" type="ComboBoxList`1[System.String]" values="Float, Wrist, Both, Mixed, Mixed (District Zero), Mixed (Darkness Falls), Mixed (War3zuk), Mixed (Asia Mod), Mixed (Afterlife), None" localization_prefix="" />
 							<controloption name="WeaponPointer" type="ComboBoxBool" localization_prefix="xuiComboOnOff" />
 							<controloption name="CursorSize" type="ComboBoxFloat" value_min="0.00" value_max="2.0" value_increment="0.1" value_wrap="false" format_string="0%" />
 							<controloption name="WorldPointer_R" type="ComboBoxFloat" value_min="0.0" value_max="1.0" value_increment="0.01" value_wrap="true" format_string="0%" />
